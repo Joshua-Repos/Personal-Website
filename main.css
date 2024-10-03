@@ -35,3 +35,56 @@ body{
 .links a:hover {
     opacity: 100%;
 }
+.ball {
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    border-radius: 50%;
+    background-color: white;
+    left: -30px;
+    top: 0;
+    animation: movement 3s linear infinite, squashing 3s linear infinite;
+}
+.ball :nth-child(2) {
+    animation-delay: .2s;
+    opacity: .6;
+}
+
+@keyframes movement {
+    16%, 48%, 78% {
+        top: 300px;
+        animation-timing-function: ease-in-out;
+    }
+    32% {
+        top: 50px;
+        animation-timing-function: ease-in;
+    }
+    62% {
+        top: 150px;
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+            top: 200px;
+            animation-timing-function: ease-in;
+    }
+    100% {
+            top: 270px;
+            left: 100%;
+            animation-timing-function: ease-out;
+            transform: rotate(360deg);
+    }
+}
+
+@keyframes squashing {
+    16%, 48%, 78% {
+        height: 25px;
+        border-radius: 50px 50px 25px 25px;
+        transform: scaleX(1.6);
+    }
+    15%,47%,77%,18%,50%,80% {
+        height: 30px;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+}
