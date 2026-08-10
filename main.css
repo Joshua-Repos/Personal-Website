@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
 :root {
-    --base-color: #EDEADF;
-    --text-color: black;
-    --primary-color: #98816D;
-    --secondary-color: #9E9792;
-    --tertiary-color: #d2c3e1;
-    --color-1: #F9F6F3;
-    --color-2: #F3F7F9;
-    --color-3: #F6F3F9;
+    --base-color: #F1EBE6;
+    --text-color: #17212E;
+    --primary-color: #F5B873;
+    --secondary-color: #F5B873;
+    --tertiary-color: #F5B873;
+    --color-1: white;
+    --color-2: white;
+    --color-3: white;
 }
 
 * {
