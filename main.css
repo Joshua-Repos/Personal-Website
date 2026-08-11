@@ -171,6 +171,12 @@ section#learning img {
     object-position: left;
 }
 
+a figure,
+a:has(figure) {
+    text-decoration: none;
+    color: var(--text-color)
+}
+
 @media(max-width: 988px) {
     header {
         text-align: center;
